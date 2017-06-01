@@ -1,5 +1,9 @@
-var app01 = angular.module("app", []);
+var app = angular.module("app", []);
 
-app01.controller("appController", function(){
+app.controller("appController1", function(){
     this.name = "This is the first controller";
+});
+
+app.controller("appController2", function(){
+    this.name = "This is the second controller";
 });
