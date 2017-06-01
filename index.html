@@ -10,6 +10,8 @@
     This is a new angularjs application that can calculate 3+9={{3+9}}
     <div ng-controller="appController1 as ctr1">
         {{ctr1.name}} : This message is found in the first controller
+        <h3 ng-show="ctr1.showMe"> Show </h3>
+        <h3 ng-hide="!ctr1.hideMe"> Hide </h3>
     </div>
 
         <div ng-controller="appController2 as ctr2">
