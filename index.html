@@ -1,4 +1,4 @@
-<html ng-app="app01">
+<html ng-app="app">
 <head>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.angularjs.org/1.4.8/angular.js" ></script>
@@ -8,5 +8,8 @@
 <body>
     <h1>HELLO ANGULARJS !!!!!</h1>
     This is a new angularjs application that can calculate 3+9={{3+9}}
+    <div ng-controller="appController as ctr">
+        {{ctr.name}} : This message is found in the controller
+    </div>
 </body>
 </html>
