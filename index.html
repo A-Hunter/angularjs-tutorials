@@ -42,7 +42,7 @@
                 <div class="col-xs 12 col-sm-5 col-md-5">
                     <div class="form-group">
                         <label>FirstName</label>
-                        <input type="text" class="form-control" ng-model="ctr1.Object.firstName"/>
+                        <input type="text" class="form-control" ng-model="ctr1.Object.firstName" ng-keyup="ctr1.keyUp(ctr1.Object.firstName)"/>
                     </div>
                     <div class="form-group">
                         <label>LastName</label>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="form-group">
                         <label for="form-control" >Occupation</label>
-                        <select class="form-control" ng-model="ctr1.Object.occupation">
+                        <select class="form-control" ng-model="ctr1.Object.occupation" ng-change="ctr1.changeItem(ctr1.Object.occupation)" >
                             <option>Ninja</option>
                             <option>Shinobi</option>
                             <option>Ambu</option>
@@ -63,6 +63,9 @@
                             <option>Akatsuki</option>
                         </select>
                     </div>
+
+                    <input type="checkbox" ng-model="checkmodel" ng-checked="ctr1.checkedMe(checkmodel)">CheckedOrNot</input>
+
                     <div class="form-group">
                         <label>Birth Date</label>
                         <input type="date" class="form-control" ng-model="ctr1.Object.birthDate" />

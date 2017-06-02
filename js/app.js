@@ -28,8 +28,21 @@ app.controller("appController1", function(){
         this.Object.age = "";
         this.Object.occupation = "";
         this.Object.birthDate = "";
+    };
 
+    // Sixth Lesson : ng-change
+    this.changeItem = function(value){
+        alert(value);
+    };
+    // Sixth Lesson : ng-keyup
+    this.keyUp = function(value){
+        alert(value);
+    };
+    // Sixth Lesson : ng-checked
+    this.checkedMe = function(value){
+        alert(value);
     }
+
 });
 
 app.controller("appController2", function(){
