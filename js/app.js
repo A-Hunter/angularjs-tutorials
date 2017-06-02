@@ -10,6 +10,7 @@ app.controller("appController1", function(){
     this.hideMe = true;
 
     // Third Lesson : ng-repeat
+    // Fourth Lesson : ng-model 2-way data binding
     this.text = "ABC";
     this.tab = ['i','j','k'];
 
@@ -17,8 +18,6 @@ app.controller("appController1", function(){
                        {firstName:"Sishui", lastName:"Uchiha", age:"28", occupation:"Shinobi", birthDate:"1986-02-02"},
                        {firstName:"Netero", lastName:"Isaac", age:"125", occupation:"Hunter", birthDate:"1889-03-03"}];
 
-    // Fourth Lesson : ng-model 2-way data binding
-    this.person = {firstName:"Itachi", lastName:"Uchiha", age:"27", occupation:"Shinobi", birthDate:"1989-01-01"};
 });
 
 app.controller("appController2", function(){
