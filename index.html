@@ -27,7 +27,7 @@
                 </tr>
             </theader>
             <tbody>
-                <tr  ng-repeat="character in ctr1.characters">
+                <tr ng-repeat="character in ctr1.characters">
                     <td>{{character.firstName}}</td>
                     <td>{{character.lastName}}</td>
                     <td>{{character.age}}</td>
@@ -37,24 +37,24 @@
             </tbody>
         </table>
 
-        <form>
+        <form ng-submit="ctr1.submitForm()">
             <div class="panel-body">
                 <div class="col-xs 12 col-sm-5 col-md-5">
                     <div class="form-group">
                         <label>FirstName</label>
-                        <input type="text" class="form-control" ng-model="ctr1.characters[1].firstName"/>
+                        <input type="text" class="form-control" ng-model="ctr1.Object.firstName"/>
                     </div>
                     <div class="form-group">
                         <label>LastName</label>
-                        <input type="text" class="form-control" ng-model="ctr1.characters[1].lastName" />
+                        <input type="text" class="form-control" ng-model="ctr1.Object.lastName" />
                     </div>
                     <div class="form-group">
                         <label>Age</label>
-                        <input type="text" class="form-control" ng-model="ctr1.characters[1].age" />
+                        <input type="text" class="form-control" ng-model="ctr1.Object.age" />
                     </div>
                     <div class="form-group">
                         <label for="form-control" >Occupation</label>
-                        <select class="form-control" ng-model="ctr1.characters[1].occupation">
+                        <select class="form-control" ng-model="ctr1.Object.occupation">
                             <option>Ninja</option>
                             <option>Shinobi</option>
                             <option>Ambu</option>
@@ -65,8 +65,10 @@
                     </div>
                     <div class="form-group">
                         <label>Birth Date</label>
-                        <input type="date" class="form-control" ng-model="ctr1.characters[1].birthDate" />
+                        <input type="date" class="form-control" ng-model="ctr1.Object.birthDate" />
                     </div>
+                    <input type="submit" class="btn btn-default" />
+                    <button ng-click="submitForm()" class="btn btn-primary">Submit With ng-click</button>
                 </div>
             </div>
         </form>
