@@ -1,5 +1,6 @@
 <html ng-app="app">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.angularjs.org/1.4.8/angular.js" ></script>
     <script src="js/app.js" ></script>
@@ -12,6 +13,29 @@
         {{ctr1.name}} : This message is found in the first controller
         <h3 ng-show="ctr1.showMe"> Show </h3>
         <h3 ng-hide="!ctr1.hideMe"> Hide </h3>
+        <h4 ng-repeat="repeat in ctr1.text.split('')" >index : {{$index}} - value : {{repeat}}</h4>
+        <h4 ng-repeat="r in ctr1.tab" >index : {{$index}} - value : {{r}}</h4>
+
+        <table class="table">
+            <theader>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                    <th>Birth Date</th>
+                </tr>
+            </theader>
+            <tbody>
+                <tr  ng-repeat="character in ctr1.characters">
+                    <td>{{character.firstName}}</td>
+                    <td>{{character.lastName}}</td>
+                    <td>{{character.age}}</td>
+                    <td>{{character.occupation}}</td>
+                    <td>{{character.birthDate}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
         <div ng-controller="appController2 as ctr2">
