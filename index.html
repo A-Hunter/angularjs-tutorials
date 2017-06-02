@@ -36,6 +36,40 @@
                 </tr>
             </tbody>
         </table>
+
+        <form>
+            <div class="panel-body">
+                <div class="col-xs 12 col-sm-5 col-md-5">
+                    <div class="form-group">
+                        <label>FirstName</label>
+                        <input type="text" class="form-control" ng-model="ctr1.characters[1].firstName"/>
+                    </div>
+                    <div class="form-group">
+                        <label>LastName</label>
+                        <input type="text" class="form-control" ng-model="ctr1.characters[1].lastName" />
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="text" class="form-control" ng-model="ctr1.characters[1].age" />
+                    </div>
+                    <div class="form-group">
+                        <label for="form-control" >Occupation</label>
+                        <select class="form-control" ng-model="ctr1.characters[1].occupation">
+                            <option>Ninja</option>
+                            <option>Shinobi</option>
+                            <option>Ambu</option>
+                            <option>Samurai</option>
+                            <option>Hunter</option>
+                            <option>Akatsuki</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Birth Date</label>
+                        <input type="date" class="form-control" ng-model="ctr1.characters[1].birthDate" />
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
         <div ng-controller="appController2 as ctr2">
