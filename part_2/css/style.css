@@ -1,0 +1,15 @@
+.ng-pristine{
+    color: black;
+}
+
+.ng-dirty{
+    color: brown;
+}
+
+.ng-valid{
+    color: green;
+}
+
+.ng-invalid{
+    color: red;
+}
