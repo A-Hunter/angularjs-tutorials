@@ -7,8 +7,8 @@ app.controller('appController', function($scope){
 app.directive('occupation', function(){
     return{
         scope:{
-          type:"@"  
+          job:"@"  
         },
-        template:"<div>{{type}}</div>"
+        template:"<div>{{job}}</div>"
     };
 })
