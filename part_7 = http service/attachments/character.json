@@ -1,0 +1,24 @@
+[{
+    "firstName":"Itachi", 
+    "lastName":"Uchiha", 
+    "email":"itachi.uchiha@gmail.com", 
+    "age":"25", 
+    "occupation":"Shinobi", 
+    "birthDate":"1989-01-01"
+},
+{
+    "firstName":"Sishui", 
+    "lastName":"Uchiha", 
+    "email":"sishui.uchiha@gmail.com",
+    "age":"28", 
+    "occupation":"Shinobi",
+    "birthDate":"1986-02-02"
+},
+{
+    "firstName":"Netero", 
+    "lastName":"Isaac", 
+    "email":"netero.isaac@gmail.com",
+    "age":"125", 
+    "occupation":"Hunter", 
+    "birthDate":"1889-03-03"
+}]
