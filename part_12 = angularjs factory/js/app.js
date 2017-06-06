@@ -35,14 +35,3 @@ app.controller('appController', ['$scope','$http','appFactory','appFactorySecond
     })
 }]);
 
-app.controller('detailsController', ['$scope','$http','$routeParams','$filter',function($scope,$http,$routeParams,$filter){
-    
-            $http.get("attachments/character.json")
-        .success(function(response){
-            $scope.character=$filter("filterById")(response,$routeParams.id);
-      }).error(function(error){
-            alert(error);
-    });
-    
-}]);
-
