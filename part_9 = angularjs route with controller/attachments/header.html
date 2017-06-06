@@ -1,0 +1,33 @@
+<div>
+    <table class="table forum table-striped" style="margin-top:100px">
+        <thead>
+            <tr>
+                <th>Person</th>
+                <th class="cell-stat-2x">Age</th>
+                <th class="cell-stat-2x">Occupation</th>
+                <th class="cell-stat-2x">Birth Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="character in characters">
+                <td>
+                    <h4>
+                        <a href="#">{{character.firstName}} {{character.lastName}}</a>
+                    </h4>
+                    <br/>
+                    <small>{{character.email}}</small>
+                </td>
+                <td>
+                    <a href="#">{{character.age}}</a>
+                </td>
+                <td>
+                    <a href="#">{{character.occupation}}</a>
+                </td>
+                <td>
+                    <a href="#">{{character.birthDate}}</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
