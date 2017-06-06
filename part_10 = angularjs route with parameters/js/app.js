@@ -64,3 +64,16 @@ app.filter("filterById", function(){
         }
     }
 });
+
+/**
+or you can use :
+
+    return function(charac, id){
+        var i = 0, len=charac.length;
+        for(i=0;i<len;i++){
+            if(charac[i].id==id){
+                return charac[i];
+            }
+        }
+    }
+*/
