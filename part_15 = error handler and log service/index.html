@@ -1,0 +1,46 @@
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"/>
+    <script src="https://code.angularjs.org/1.4.8/angular.js" ></script>
+    <script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.4.3/angular-cookies.js"></script>
+    <script src="js/app.js" ></script>
+</head>
+
+<body>
+    <div ng-controller="appController">
+        {{name}}
+        <table class="table forum table-striped" style="margin-top:100px">
+            <thead>
+                <tr>
+                    <th>Person</th>
+                    <th class="cell-stat-2x">Age</th>
+                    <th class="cell-stat-2x">Occupation</th>
+                    <th class="cell-stat-2x">Birth Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="character in characters">
+                    <td>
+                        <h4>
+                            <a href="#/details/{{character.id}}">{{character.firstName}} {{character.lastName}}</a>
+                        </h4>
+                        <br/>
+                        <small>{{character.email}}</small>
+                    </td>
+                    <td>
+                        <a href="#">{{character.age}}</a>
+                    </td>
+                    <td>
+                        <a href="#">{{character.occupation}}</a>
+                    </td>
+                    <td>
+                        <a href="#">{{character.birthDate}}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
