@@ -1,0 +1,27 @@
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"/>
+    <script src="https://code.angularjs.org/1.4.8/angular.js" ></script>
+    <script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.4.3/angular-messages.js"></script>
+    <script src="js/app.js" ></script>
+</head>
+
+<body>
+    <form name="form1" novalidate>
+        <div class="panel-body">
+            <div class="col-xs 12 col-sm-5 col-md-5">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="email" name="email1" ng-minlength="10" class="form-control" required ng-model="name"/>
+                    <div ng-messages="form1.email1.$error" ng-messages-multiple>
+                        <div ng-message="required">Email required</div>
+                        <div ng-message="email">Email Format Error</div>
+                        <div ng-message="minlength">Minimum length Error</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
